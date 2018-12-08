@@ -1,0 +1,22 @@
+.side-menu{
+    width: 60px;
+    background-color: #3b2f61;
+    position:fixed;
+    left: 0;
+    top: 20;
+    height: 100%;
+    transition: width 1s;
+    
+    &:hover{
+        width: 270px;
+    }
+
+    .menu-nav{
+        position:fixed;
+        margin-top:20px;
+    }
+
+    .link-item{
+        color:#fff;
+    }
+}

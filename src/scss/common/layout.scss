@@ -1,0 +1,101 @@
+/* .grid{
+    margin:136px 0;
+    .grid-item{
+        img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 11px;
+        }
+    }
+}
+
+.grid-item__row{
+    display:flex;
+    justify-content: space-between;
+}
+
+.grid-item__share{
+    max-width:15px;
+    max-height:17px;
+}
+
+.grid-item__profile{
+    display:flex;
+}
+
+ */
+
+
+// DRUGI NACIN JABRIII
+
+
+/*  .grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 136px 0;
+    max-height: 150vh;
+    .grid-item{
+        width: 33.33%;
+        padding: 0 20px;
+
+        @media(max-width: 800px){
+            width: 50%;
+        }
+
+        @media(max-width: 600px){
+            width: 100%;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 11px;
+        }
+    }
+
+    .grid-item__share{
+        width: 15px;
+        height: 17px;
+    }
+
+    .grid-item__profile{
+        display:flex;
+    }
+
+ } */
+
+
+ //grid system with column
+ .grid{
+    @media(max-width: 800px){
+        column-count: 2;
+    }
+
+    @media(max-width: 600px){
+      column-count: 1;
+    }
+
+    column-count: 3;
+    column-gap: 10px;
+    .grid-item{
+    //display: flex;
+    //flex-direction: column;
+    display: inline-block;
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 11px;
+        }
+    }
+
+    .grid-item__share{
+        width: 15px;
+        height: 17px;
+    }
+
+    .grid-item__profile{
+        display:flex;
+    }
+
+ }
